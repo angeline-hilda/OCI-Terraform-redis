@@ -2,13 +2,13 @@
 
 
 module "jump_server" {
-  source                      = "./instance"
-  instance_count              = var.app_vm1_instance_count
+  source         = "./instance"
+  instance_count = var.app_vm1_instance_count
   #availability_domain_number = var.availability_domain_number
-  compute_compartment_id      = var.compartment_id
-  display_name                = var.instance_display_name
-  shape                       = var.app_vm1_shape
-  tenancy_ocid                = var.tenancy_id
+  compute_compartment_id = var.compartment_id
+  display_name           = var.instance_display_name
+  shape                  = var.app_vm1_shape
+  tenancy_ocid           = var.tenancy_id
 
 
   // If shape name contains ".Flex" and instance_flex inputs are not null, use instance_flex inputs values for shape_config block
@@ -20,7 +20,7 @@ module "jump_server" {
   subnet_type             = module.network.public_subnet_subnet_type
   boot_volume_size_in_gbs = var.app_vm1_boot_volume_size
   ssh_authorized_keys     = var.ssh_public_key
-  ssh_private_key = var.ssh_private_key
+  ssh_private_key         = var.ssh_private_key
 
   #install_postgresql_client  = var.postresql_install
   #install_redis_cli = var.redis_install

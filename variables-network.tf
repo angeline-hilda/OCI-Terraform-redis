@@ -45,11 +45,11 @@ variable "db_subnet_cidr_block" {
 
 variable "public_ingress_rules" {
   description = "List of ingress rules for the public subnet"
-  type        = list(object({
-    protocol = string
-    source   = string
-    min      = optional(number)
-    max      = optional(number)
+  type = list(object({
+    protocol  = string
+    source    = string
+    min       = optional(number)
+    max       = optional(number)
     icmp_type = optional(number)
     icmp_code = optional(number)
   }))
@@ -58,11 +58,11 @@ variable "public_ingress_rules" {
 
 variable "db_ingress_rules" {
   description = "List of ingress rules for the database subnet"
-  type        = list(object({
-    protocol = string
-    source   = string
-    min      = optional(number)
-    max      = optional(number)
+  type = list(object({
+    protocol  = string
+    source    = string
+    min       = optional(number)
+    max       = optional(number)
     icmp_type = optional(number)
     icmp_code = optional(number)
   }))
@@ -71,12 +71,12 @@ variable "db_ingress_rules" {
 
 variable "public_subnet_display_name" {
   description = "Display name for public subnet"
-  
+
 }
 
 variable "db_subnet_display_name" {
   description = "Display name for Database subnet"
-  
+
 }
 
 variable "public_egress_rules" {

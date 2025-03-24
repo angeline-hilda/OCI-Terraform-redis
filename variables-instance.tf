@@ -30,11 +30,11 @@ variable "app_vm1_boot_volume_size" {
   description = "Application VM boot volume size in GBs"
 }
 variable "instance_display_name" {
-  
+
 }
 
 variable "ssh_public_key" {
-  
+
 }
 variable "ssh_private_key" {
   description = "Private key for SSH access"
