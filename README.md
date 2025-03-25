@@ -66,6 +66,17 @@ tofu destroy # or terraform destroy
    redis-cli --tls -h <oci-cache_node-endpoint>
    ```
 
+## Connect using Redis Insight
+Install Redis Insight on your local laptop and connect to OCI Cache with Redis.
+1. Install [Redis Insight](https://redis.io/insight/?utm_source=redisinsight&utm_medium=website&utm_campaign=install_redisinsight#insight-form)
+2. Add the credentials to connect to the OCI Cache with Redis.
+   - **Host**: Enter cluster node endpoint
+   - **Port**: Enter **6379**
+3. Enter the Bastion/Jump Server public IP address as Host and Port will be 22. Redis Insight will use the Jump Server in the public subnet using SSH to access the OCI Cache with Redis database.
+   ![image](https://github.com/user-attachments/assets/8132edfa-6950-4366-8894-3362b8351f7d)
+![image](https://github.com/user-attachments/assets/0d339c22-33ad-4c58-b59e-ec571780cb2d)
+
+
 ## Documentation
 - [OCI Cache with Redis](https://docs.public.oneportal.content.oci.oraclecloud.com/en-us/iaas/Content/ocicache/overview.htm#ocicacheoverview)
 - [OCI Monitoring](https://docs.oracle.com/en-us/iaas/Content/Monitoring/Concepts/monitoringoverview.htm)
