@@ -73,9 +73,8 @@ Install Redis Insight on your local laptop and connect to OCI Cache with Redis.
    - **Host**: Enter cluster node endpoint
    - **Port**: Enter **6379**
 3. Enter the Bastion/Jump Server public IP address as Host and Port will be 22. Redis Insight will use the Jump Server in the public subnet using SSH to access the OCI Cache with Redis database.
-   ![image](https://github.com/user-attachments/assets/8132edfa-6950-4366-8894-3362b8351f7d)
-![image](https://github.com/user-attachments/assets/0d339c22-33ad-4c58-b59e-ec571780cb2d)
-
+<img src="https://github.com/user-attachments/assets/8132edfa-6950-4366-8894-3362b8351f7d" width="800"/>
+<img src="https://github.com/user-attachments/assets/0d339c22-33ad-4c58-b59e-ec571780cb2d" width="800"/>
 
 ## Documentation
 - [OCI Cache with Redis](https://docs.public.oneportal.content.oci.oraclecloud.com/en-us/iaas/Content/ocicache/overview.htm#ocicacheoverview)
