@@ -97,8 +97,8 @@ redis_cluster_software_version = "REDIS_7_0"
 
 ######################### ALARMS #######################################
 
-#########################  Alarms      #######################################
-#alarm_namespace for Postgresql is oci_redis
+
+#alarm_namespace for OCI Cache with redis is oci_redis
 #resourceId is the OCID of the resource that was scanned
 
 # Refer this for other Cache Metrics: https://docs.oracle.com/en-us/iaas/Content/ocicache/metrics.htm
