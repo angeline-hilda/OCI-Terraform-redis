@@ -14,7 +14,7 @@ module "redis"{
 
     #redis_shard_count = var.redis_shard_count 
    
-    subnet_id = module.network.vcn_id
+    subnet_id = module.network.db_subnet_id
     nsg_ids = var.nsg_ids
 
   providers = {

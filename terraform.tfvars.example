@@ -12,6 +12,15 @@ user_id =
 compartment_id = 
 
 #======================== app vm parameters (jump server) ==================================
+
+# The current configuration of this VM is:
+# OS - Oracle Linux
+# Linux Version 8
+# image_id is set to the Region Sepcific OCID of the image
+# you can find the list of images and the region specific OCID here: https://docs.oracle.com/en-us/iaas/images/oracle-linux-8x/oracle-linux-8-10-aarch64-2025-03-18-0.htm
+# This ensures that the smae image us used very time when you run Terraform apply job
+
+
 app_vm1_instance_count   = "1"
 app_vm1_shape            = "VM.Standard.E4.Flex"
 app_vm1_memory_in_gbs    = "8"
