@@ -4,17 +4,19 @@ variable "destinations" {
     description = "A list of destinations for alarm notifications."
 }
 
-/*
-variable "alarm_display_name" {
-  type = string
-}
-*/
 
 
 variable "alarm_namespace" {
   type = string
 }
 /*
+
+variable "alarm_display_name" {
+  type = string
+}
+
+
+
 variable "alarm_query" {
   type = string
 }
