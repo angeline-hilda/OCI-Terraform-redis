@@ -105,12 +105,16 @@ redis_cluster_software_version = "REDIS_7_0"
 
 
 
-alarm_display_name = "CpuUtilization"
 alarm_namespace = "oci_redis"
 destinations =["<OCID of Notification Topic"]
 
-alarm_severity = "CRITICAL"
-alarm_pending_duration = "PT5M"
+alarm_pending_duration = "PT1M"
 alarm_message_format = "ONS_OPTIMIZED"
+
+cpu_utilization_alarm_threshold = 60
+memory_usage_alarm_threshold = 85
+network_bandwidth_in_allowance_exceeded_alarm_threshold = 10000000          #10MB/s
+network_bandwidth_out_allowance_exceeded_alarm_threshold = 10000000         #10MB/s
+network_connections_tracked_allowance_exceeded_alarm_threshold = 1000
 
 

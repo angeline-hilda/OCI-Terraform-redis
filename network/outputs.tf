@@ -1,4 +1,4 @@
-output "vcn_id_vcn1_id" {
+output "vcn_id" {
   value = oci_core_vcn.vcn1.id
 }
 
