@@ -94,3 +94,11 @@ module "oci_redis_monitoring" {
   
 }
 
+# using the direct custer output, the node endpoints can be exposed only for non-sharded clusters
+# Sharded clusters can have 100s of nodes, the payload is very large to send in get cluster response and you can't paginate on it.
+# use this data source block to get the node_endpints for both sharded and non-sharded clusters
+
+
+data "oci_redis_redis_cluster_nodes" "redis_cluster" {
+  redis_cluster_id = module.redis.redis_id
+}
